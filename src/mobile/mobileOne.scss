@@ -1,0 +1,62 @@
+body {
+    background-color: rgba(232, 241, 241, 0.986);
+}
+
+.mobile-one-div {
+    box-sizing: border-box;
+    margin:5;
+    padding: 5;
+    background-color: rgba(232, 241, 241, 0.986);
+  }
+.top-icons {
+    padding: 15px;
+    .right-icons {
+        float: right;
+    }
+}
+.bit-display {
+    display: flex;
+    padding-left: 30px;
+    img {
+        border-radius: 50%;
+        height: 60px;
+        padding: 0px 10px 0px 10px;
+    }
+    div {
+        padding-top: 6px;
+        div {
+            padding-top: 50px;
+            span {
+                font-size: 30px;
+                font-weight: bold;
+                padding-right: 4px;
+            }
+        }
+    }
+}
+
+.chart-title {
+    padding-left: 8px;
+    span {
+        padding-right: 12px;
+    }
+}
+
+.market{
+    padding:10px
+}
+
+.bit-cards {
+    display: flex;
+    div {
+        background-color: #456bd4;
+        margin: 15px;
+        height: 200px;
+        width: 100px;
+        border-radius: 2%;
+        box-shadow: 5px 10px 8px #888888;
+        h4 {
+            padding: 8px 0px 0px 8px;
+        }
+    }
+}
