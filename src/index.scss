@@ -1,74 +1,97 @@
-$header-color: rgb(25, 140, 175);
 
 body{
     font-size: 20px;
     margin: 0px;
 }
-
-.header {
-    text-align: center;
-    background-color: $header-color;
-    color: white;
-    padding: 80px;
-    span {
-        text-transform: uppercase;
-    }
-}
-
-.posts {
+.mobile-main-div{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: #bdbdbd;
+  }
+  .mobile-child-div{
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 380px;
+    height: 600px;
+    border-radius: 10px;
+  
+    .mobile-div-1{
+      width: 360px;
+      height: 250px;
+      background-color: #303f9f;
+      margin: 5px 5px;
+      border-radius: 10px;
+  
+      .header{
+        color: white;
+        margin: 20px;
+  
+        .icon-1{
+          margin-right:230px;
+        }
+  
+        .icon-2{
+          margin-right: 15px;
+        }
+      }
+  
+      .mobile-div-1-2{
+        margin: 20px;
+        color: white;
+  
+        .first-child{
+          font-weight: bold;
+        }
+  
+        .second-child{
+          font-weight: lighter;
+        }
+  
+        span{
+          margin-right: 20px;
+        }
+      }
+  
+      .mobile-div-1-3{
+        margin: 20px;
+        color: white;
+        font-size: 10px;
+      }  
+  
+      .mobile-div-1-4{
+        display: flex;
+        flex-wrap: wrap;
+        
+        .first-son{
+          margin-left: 20px;
+          margin-bottom:10px;
+        }
+  
+        .third-son{
+          margin-left: 20px;
+        }
+      }
+  
+      .mobile-div-1-4 > div {
+        width: 150px;
+      }
+    }
+  }
+
+  .bit-cards {
+    display: flex;
     div {
-        background-color: #feffffea;
+        background-color: #456bd4;
         margin: 15px;
-        height: 550px;
-        width: 350px;
-        text-align: center;
+        height: 200px;
+        width: 200px;
         border-radius: 2%;
         box-shadow: 5px 10px 8px #888888;
-        img {
-        width: 350px;
-        height: 230px;
-        position: relative;
+        h4 {
+            padding: 8px 0px 0px 8px;
         }
-        .link {
-        text-decoration: none;
-        text-align: center;
-        color: black;
     }
-    }
-}
-
-.singlepage {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0 20px 0 20px;
-}
-
-.pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    span, a {
-        text-decoration: none;
-        margin: 0 10px 0 10px;
-        background-color: $header-color;
-        color: white;
-        padding: 1em 2.5em;
-        text-decoration: none;
-        text-transform: uppercase;
-        border-radius: 50px 50px 50px 50px;
-      } 
-}
-
-.loader {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }

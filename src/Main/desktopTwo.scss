@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  }
+  
+  .main-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e88e5;
+    padding: 1.8%;
+  }
+  
+  .father-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1976D2;
+    width: 80%;
+    height: 620px;
+  }
+  .child-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 620px;
+    background-color: white;
+    padding: 0px 180px 10px 180px;
+    border-bottom-left-radius: 25% 10%;
+    border-bottom-right-radius: 65% 30%;
+  
+    .top-icons{
+      display: flex;
+    align-items: center;
+    justify-content: flex-end ;
+    color: #64b5f6;
+    margin-left: 100%;
+    margin-top:3%;
+  
+    .top-icon{
+      margin: 15px;
+      width: 15px;
+    }
+    }
+  
+    .header-div{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      color: #1e88e5;
+      justify-content: center;
+      margin: 50px;
+  
+      h1{
+        margin: 5px;
+        padding-bottom: 10px;
+        font-weight: normal;
+      }
+    }
+  
+    input{
+      width: 450px;
+      height: 50px;
+      border: none;
+      color: #90caf9;
+    }
+  
+    .search{
+      color: #64b5f6;
+    }
+  
+    ::placeholder{
+      color: #bbdefb;
+    }
+  
+    hr{
+      width: 70%;
+      margin-bottom: 40px;
+      border: 1px  solid #bbdefb;
+    }
+  
+    .icon-div{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .icon{
+        margin: 20px 20px 40px 20px;
+        width: 100px;
+        display: flex;
+        color: #64b5f6;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+  
+        p{
+          font-size: small;
+        }
+      }
+    }
+  
+     .footer{
+      display: flex;
+    align-items: center;
+    justify-content: flex-end ;
+    margin-left: 100%;
+    margin-bottom:3%;
+  
+    span{
+      margin: 10px 10px 10px 10px;
+      color: white;
+    }
+    }
+  }

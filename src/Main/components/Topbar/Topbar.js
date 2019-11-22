@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Badge, Hidden, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
+import { Texture, ControlPoint, NotificationsOutlined  } from '@material-ui/icons';
 import InputIcon from '@material-ui/icons/Input';
 
 const useStyles = makeStyles(theme => ({
@@ -24,6 +25,14 @@ const useStyles = makeStyles(theme => ({
   },
   img: {
     height: '40px',
+  },
+  search: {
+    padding: '6px',
+    border: 'none',
+    outline: 'none',
+    marginTop: '8px',
+    marginRight: '16px',
+    fontSize: '17px',
   }
 }));
 
@@ -48,6 +57,7 @@ const Topbar = props => {
           />
         </RouterLink>
         <div className={classes.flexGrow} />
+        <input className={classes.search} type="text" placeholder="Search.." />
         <Hidden mdDown>
           <IconButton>
             <Badge
@@ -55,16 +65,16 @@ const Topbar = props => {
               color="primary"
               variant="dot"
             >
-              <NotificationsIcon />
+              <ControlPoint  />
             </Badge>
           </IconButton>
           <IconButton
             className={classes.signOutButton}
           >
-            <InputIcon />
+            <NotificationsOutlined />
           </IconButton>
           <IconButton>
-            <MenuIcon />
+          <Texture />
           </IconButton>
         </Hidden>
         <Hidden lgUp>
